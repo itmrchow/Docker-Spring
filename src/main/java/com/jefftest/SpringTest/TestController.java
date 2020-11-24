@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/api")
 public class TestController {
 
-    @GetMapping(value = "/v1/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/testStr/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getTestStr(@PathVariable String name) {
         return "Hello " + name;
     }
